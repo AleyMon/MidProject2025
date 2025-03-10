@@ -1,0 +1,16 @@
+
+/* Definir variables de color */
+
+:root {
+    --accent: #43d2ff; 
+    --primary-default: #072ac8; 
+    --primary-hover: #a2d6f9; 
+    --primary-tapped: #d1edff; 
+    --neutral-dark: #292e47; 
+    --neutral-medium: #6b708d; 
+    --neutral-light: #f4f6fc; 
+    --neutral-lightblue: #ecf7ff; 
+    --secondary-1: #ffc600; 
+    --secondary-2: #fce300;
+}
+
