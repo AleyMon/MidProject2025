@@ -1,0 +1,524 @@
+.hero-section {
+    margin-top: 15.25vh;
+    height: 40.63rem;
+    padding-left: 10.67rem;
+    /* Espacio izquierdo */
+    padding-right: 10.63rem;
+    /* Espacio derecho */
+    display: flex;
+    justify-content: space-between;
+    /* Separar las dos columnas */
+    align-items: center;
+    /* Alineación vertical */
+    width: 100%;
+}
+
+/* Contenedor de la primera columna (con título y párrafos) */
+.hero-section-container {
+    width: 35.63rem;
+    height: 40.63rem;
+    padding-top: 6.82rem;
+    /* Espacio superior */
+    display: flex;
+    flex-direction: column;
+    /* Elementos en columna */
+    justify-content: flex-start;
+    /* Alineación vertical */
+}
+
+/* Contenedor que agrupa el botón y el texto "See our work" */
+.hero-section-getin {
+    display: flex;
+    /* Para poner los elementos en fila */
+    align-items: center;
+    /* Alineación vertical */
+    gap: 1rem;
+    /* Espacio entre el botón y el texto */
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    width: 35.63rem;
+    height: 40.63rem;
+    display: flex;
+    background-image: url(./img-midproject/project-assets/hero-section/hero-image.png);
+    background-color: var(--neutral-light);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Estilos de las imágenes */
+.hero-section-card1,
+.hero-section-card2 {
+    position: absolute;
+    /* Permite que las imágenes se ubiquen fuera del flujo normal del documento */
+}
+
+.hero-section-card1 {
+    padding-top: 1rem;
+    width: 11.88rem;
+    height: 13.5rem;
+    background-color: transparent;
+    border-radius: 10%;
+    top: 0;
+    left: 0;
+}
+
+.hero-section-card2 {
+    width: 11.88rem;
+    height: 13.5rem;
+    background-color: transparent;
+    border-radius: 10%;
+    bottom: 0;
+    right: 0;
+}
+
+/* Estilos para el botón */
+button {
+    color: #FFFFFF;
+    background-color: var(--primary-default);
+    border: none;
+    width: 150px;
+    height: 52px;
+    font-size: 1rem;
+}
+
+/* Estilos para el texto "See our work" */
+.hero-section-getin p {
+    font-size: 1.25rem;
+    color: var(--primary-default);
+    cursor: pointer;
+}
+
+
+/* 
+
+-----------CLIENTS -------
+
+*/
+
+.clientes-container {
+    margin-top: 8.13rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10.67rem; /* Espacio izquierdo */
+    padding-right: 10.63rem; /* Espacio derecho */
+    justify-content: space-between;
+    filter: grayscale(1);
+    align-items: center;
+    gap: 5.56rem;
+}
+
+.clientes-container img {
+    width: 9.38rem;
+}
+
+/* Ajustes para pantallas pequeñas */
+
+@media screen and (max-width: 768px) {
+    .clientes-container {
+        flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+        padding-left: 2rem; /* Reducir el espacio izquierdo */
+        padding-right: 2rem; /* Reducir el espacio derecho */
+        gap: 2rem; /* Reducir el espacio entre las imágenes */
+        justify-content: center; /* Alinear los elementos al centro */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+
+    .clientes-container img {
+        width: 4rem; /* Reducir el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
+
+
+/* 
+
+-----------RECENT PROJECTS -------
+
+*/
+
+.projects-section {
+    margin-top: 12.5rem;
+    padding-left: 10.67rem; /* Espacio izquierdo */
+    padding-right: 10.63rem; /* Espacio derecho */
+}
+
+.recent-projects {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projects {
+    margin-top: 4.38rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    word-wrap: break-word;
+    gap: 2.5rem;
+}
+
+.simplify,
+.dashcoin,
+.vectorify {
+    background-color: #fff; /* Fondo blanco solo para los divs */
+    min-height: auto;
+    min-width: auto;
+    flex-wrap: wrap;
+}
+
+.projects img {
+    height: 15rem;
+    width: 27.75rem;
+    object-fit: cover;
+}
+
+.simplify h2,
+.dashcoin h2,
+.vectorify h2,
+.simplify p,
+.dashcoin p,
+.vectorify p {
+    background-color: #fff; /* Fondo blanco solo para los divs */
+    word-wrap: break-word;
+    border-radius: 5px; /* Opcional: redondear los bordes */
+    padding-top: 1.85rem;
+    padding-left: 1.85rem;
+}
+
+.simplify a,
+.dashcoin a,
+.vectorify a {
+    margin-top: 3.38rem;
+    display: block;
+    padding-left: 1.85rem;
+    background-color: white;
+    color: var(--primary-default);
+    text-decoration: none;
+    font: var(--headline-regular);
+}
+
+.projects a {
+    align-items: flex-end;
+    padding-bottom: 1.88rem;
+}
+
+.projects-medium {
+    font: var(--body-medium);
+    color: var(--neutral-dark);
+}
+
+.projects-regular {
+    font: var(--headline-regular);
+    color: var(--neutral-medium);
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
+    .recent-projects {
+        flex-direction: column;
+    }
+
+    .projects {
+        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        gap: 1.5rem; /* Reduce el espacio entre los proyectos */
+    }
+
+    .simplify,
+    .dashcoin,
+    .vectorify {
+        width: 100%; /* Asegura que los contenedores ocupen todo el ancho */
+        min-height: auto; /* La altura se ajustará según el contenido */
+    }
+
+    .projects img {
+        max-height: 10rem; /* Reduce la altura de la imagen en pantallas más pequeñas */
+    }
+}
+
+/* 
+
+-----------TESTIMONIAL -------
+
+*/
+
+/* CONTAINER*/
+.testimonial-section {
+    margin-top: 12.5rem;
+    min-height: 69.25vh;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    margin-bottom: 12.5rem;
+    background-color: var(--neutral-dark);
+    /*background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*EMOJIS*/
+.testimonial-memojis img {
+    position: absolute;
+    width: 5.77rem;
+    height: 5.77rem;
+    background-color: transparent;
+}
+
+.memojis1 {
+    top: 0;
+    left: 0;
+    margin: 3rem 3rem;
+}
+
+.memojis2 {
+    top: 0;
+    right: 0;
+    margin: 3rem 3rem;
+}
+
+.memojis3 {
+    bottom: 0;
+    left: 0;
+    margin: 3rem 3rem;
+}
+
+.memojis4 {
+    bottom: 0;
+    right: 0;
+    margin: 3rem 3rem;
+}
+
+/* TITULO*/
+.testimonialh3 h3 {
+    background-color: var(--neutral-dark);
+    color: var(--neutral-light);
+    text-align: center;
+}
+
+/* TEXTO*/
+.testimonialp p {
+    background-color: var(--neutral-dark);
+    color: var(--secondary-1);
+    font: var(--body-medium);
+    text-align: center;
+}
+
+/*PROFILE*/
+.testimonialbooking {
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    align-items: center; /* Alineamos verticalmente en el centro */
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    background-color: var(--neutral-dark);
+}
+
+.testimonialbooking img {
+    width: 3.13rem; /* Ajusta el tamaño de la imagen según lo necesario */
+    height: 3.13rem; /* Mantenemos la imagen cuadrada */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen cubra su contenedor sin distorsionarse */
+}
+
+.testimonial-text {
+    display: flex; /* Usamos flexbox para organizar el contenido en columna */
+    flex-direction: column; /* Apilamos los textos en una columna */
+    align-items: flex-start; /* Alineamos el texto a la izquierda */
+    background-color: var(--neutral-dark);
+}
+
+.testimonial-text p {
+    margin: 0; /* Quitamos márgenes adicionales */
+    font-size: 1rem; /* Tamaño de texto */
+    margin-bottom: 0.5rem; /* Espacio entre el nombre y el enlace */
+    background-color: var(--neutral-dark);
+    color: var(--primary-hover);
+    font: var(--headline-regular);
+}
+
+.testimonial-text a {
+    font-size: 1rem; /* Tamaño de texto */
+    color: var(--neutral-light); /* Color para el enlace */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    background-color: var(--neutral-dark);
+    font: var(--caption-2);
+
+}
+
+
+/* 
+
+-----------OUR SERVICES -------
+
+*/
+
+.services {
+    margin-top: 12.5rem;
+    padding-left: 10.67rem; /* Espacio izquierdo */
+    padding-right: 10.63rem; /* Espacio derecho */
+}
+
+.ourservices {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user {
+    margin-top: 4.38rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    word-wrap: break-word;
+    gap: 2.5rem;
+}
+
+.interface,
+.experience,
+.application {
+    background-color: #fff; /* Fondo blanco solo para los divs */
+    min-height: auto;
+    min-width: auto;
+    flex-wrap: wrap;
+}
+
+.user img {
+    background-color: transparent;
+    padding: 1.88rem;
+}
+
+.interface h2,
+.experience h2,
+.application h2,
+.interface p,
+.experience p,
+.application p {
+    background-color: #fff; /* Fondo blanco solo para los divs */
+    word-wrap: break-word;
+    border-radius: 5px; /* Opcional: redondear los bordes */
+    padding: 1.85rem; 
+}
+
+.interface a,
+.experience a,
+.application a {
+    margin-top: 3.38rem;
+    display: block;
+    padding-left: 1.85rem;
+    background-color: white;
+    color: var(--primary-default);
+    text-decoration: none;
+    font: var(--headline-regular);
+}
+
+.user a {
+    align-items: flex-end;
+    padding-bottom: 1.88rem;
+}
+
+.projects-medium {
+    font: var(--body-medium);
+    color: var(--neutral-dark);
+}
+
+.projects-regular {
+    font: var(--headline-regular);
+    color: var(--neutral-medium);
+}
+
+@media screen and (max-width: 768px) { /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
+    .ourservices {
+        flex-direction: column;
+    }
+
+    .user {
+        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        gap: 1.5rem; /* Reduce el espacio entre los proyectos */
+    }
+
+    .interface,
+    .experience,
+    .application {
+        width: 100%; /* Asegura que los contenedores ocupen todo el ancho */
+        min-height: auto; /* La altura se ajustará según el contenido */
+    }
+
+    .user img {
+        max-height: 10rem;
+        /* Reduce la altura de la imagen en pantallas más pequeñas */
+    }
+}
+
+
+/* 
+
+-----------OUR SERVICES -------
+
+*/
+
+.cta-section {
+    margin-top: 12.5rem;
+    min-height: 50vh;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    background-color: var(--secondary-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6.88rem 8.5rem 6.88rem 8.5rem;
+    
+
+}
+
+/* TITULO*/
+.cta-section h3 {
+    background-color: var(--secondary-1);
+    color: var(--neutral-dark);
+    text-align: center;
+}
+
+/* TEXTO*/
+.cta-section p {
+    background-color: var(--secondary-1);
+    color: var(--neutral-dark);
+    font: var(--body-regular);
+    text-align: center;
+}
+
+.cta-section form{
+    display: flex;
+background-color: var(--secondary-1);
+
+}
+
+
+.cta-section input{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: var(--neutral-dark);
+    font: var(--headline-regular)
+
+}
+
+.cta-section img{
+    padding-left: 1.25rem;
+    padding-right: 0.63rem;
+}
+
+.cta-section button{
+    margin-left: 1.25rem;
+}
+
+
+
+
