@@ -1,96 +1,130 @@
 .hero-section {
-    margin-top: 15.25vh;
-    height: 40.63rem;
+    margin-top: 6.25rem;
+    width: 100vw;
+    height: auto;
     padding-left: 10.67rem;
-    /* Espacio izquierdo */
     padding-right: 10.63rem;
-    /* Espacio derecho */
     display: flex;
     justify-content: space-between;
-    /* Separar las dos columnas */
     align-items: center;
-    /* Alineación vertical */
-    width: 100%;
+    overflow: hidden;
 }
 
-/* Contenedor de la primera columna (con título y párrafos) */
-.hero-section-container {
-    width: 35.63rem;
-    height: 40.63rem;
-    padding-top: 6.82rem;
-    /* Espacio superior */
-    display: flex;
-    flex-direction: column;
-    /* Elementos en columna */
-    justify-content: flex-start;
-    /* Alineación vertical */
-}
-
-/* Contenedor que agrupa el botón y el texto "See our work" */
-.hero-section-getin {
-    display: flex;
-    /* Para poner los elementos en fila */
-    align-items: center;
-    /* Alineación vertical */
-    gap: 1rem;
-    /* Espacio entre el botón y el texto */
-}
 
 /* Hero Image */
 .hero-image {
+    padding-top: 1.56rem;
     position: relative;
     width: 35.63rem;
     height: 40.63rem;
     display: flex;
-    background-image: url(./img-midproject/project-assets/hero-section/hero-image.png);
-    background-color: var(--neutral-light);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    overflow: hidden; /* Evitar que el contenido se desborde */
 }
 
 /* Estilos de las imágenes */
 .hero-section-card1,
 .hero-section-card2 {
-    position: absolute;
-    /* Permite que las imágenes se ubiquen fuera del flujo normal del documento */
+    position: absolute; /* Permite que las imágenes se ubiquen fuera del flujo normal del documento */
+    width: 11.88rem;
+    height: 13.5rem;
+    border-radius: 10%;
 }
 
 .hero-section-card1 {
-    padding-top: 1rem;
-    width: 11.88rem;
-    height: 13.5rem;
-    background-color: transparent;
-    border-radius: 10%;
-    top: 0;
+    top: 10%;
     left: 0;
 }
 
 .hero-section-card2 {
-    width: 11.88rem;
-    height: 13.5rem;
-    background-color: transparent;
-    border-radius: 10%;
     bottom: 0;
     right: 0;
 }
 
-/* Estilos para el botón */
-button {
-    color: #FFFFFF;
-    background-color: var(--primary-default);
-    border: none;
-    width: 150px;
-    height: 52px;
-    font-size: 1rem;
+.hero-button2 {
+    background-color: var(--neutral-light);
+    color: var(--neutral-medium);
+    text-align: center;
+    overflow: hidden; /* Evitar que el contenido se desborde */
 }
 
-/* Estilos para el texto "See our work" */
-.hero-section-getin p {
-    font-size: 1.25rem;
-    color: var(--primary-default);
-    cursor: pointer;
+
+.hero-section-container h1 {
+    text-align: left;
 }
+
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.88rem;
+}
+
+.hero-section-container p {
+    font: var(--body-regular);
+    color: var(--neutral-medium);
+}
+
+
+/* Ajustes para pantallas pequeñas */
+
+@media (max-width: 1402px) {
+
+    /* Ajustar las imágenes dentro de la hero-image */
+    .hero-section-card1,
+    .hero-section-card2 {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    /* Cambiar el tamaño de la imagen */
+    .hero-section {
+        margin-top: 12.50rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hacer los botones más grandes y ajustados */
+    .hero-button{
+        width: 100%;/* Ocupa todo el ancho disponible */
+        padding: 1rem;
+        font-size: 1.2rem;/* Aumentar tamaño del texto */
+        text-align: center;
+        row-gap: 2rem;
+    }
+
+
+    /* Cambiar la disposición de los elementos a columna */
+    .hero-section-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    /* Centrar el título */
+    .hero-section-container h1 {
+        text-align: center;
+        font: var(--h3);
+    }
+   /* Ajustar tamaño de los párrafos */
+   .hero-section-container p {
+    font:var(--headline-regular);
+}
+
+}
+
 
 
 /* 
@@ -99,37 +133,44 @@ button {
 
 */
 
-.clientes-container {
+.clients {
     margin-top: 8.13rem;
     height: 6rem;
     display: flex;
     flex-direction: row;
-    padding-left: 10.67rem; /* Espacio izquierdo */
-    padding-right: 10.63rem; /* Espacio derecho */
+    padding-left: 10.67rem;
+    padding-right: 10.63rem;
     justify-content: space-between;
     filter: grayscale(1);
     align-items: center;
     gap: 5.56rem;
 }
 
-.clientes-container img {
-    width: 9.38rem;
+.clients img {
+    width: 6.5rem;
+    height: 2rem;
 }
 
 /* Ajustes para pantallas pequeñas */
 
-@media screen and (max-width: 768px) {
-    .clientes-container {
+@media screen and (max-width: 900px) {
+    .clients {
+        margin-top: 6rem;
+        padding-left: 2rem;/* Reducir espacio en pantallas pequeñas */
+        padding-right: 2rem; /* Reducir espacio en pantallas pequeñas */
         flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
-        padding-left: 2rem; /* Reducir el espacio izquierdo */
-        padding-right: 2rem; /* Reducir el espacio derecho */
-        gap: 2rem; /* Reducir el espacio entre las imágenes */
-        justify-content: center; /* Alinear los elementos al centro */
-        height: auto; /* Ajustar la altura automáticamente */
+        padding-left: 2rem;/* Reducir el espacio izquierdo */
+        padding-right: 2rem;/* Reducir el espacio derecho */
+        gap: 2rem;/* Reducir el espacio entre las imágenes */
+        justify-content: center;/* Alinear los elementos al centro */
+        width: 100%;
+        height: auto;
+        
     }
 
-    .clientes-container img {
-        width: 4rem; /* Reducir el tamaño de las imágenes en pantallas pequeñas */
+    .clients img {
+        width: 4rem;/* Reducir el tamaño de las imágenes en pantallas pequeñas */
+        height: auto;
     }
 }
 
@@ -140,10 +181,10 @@ button {
 
 */
 
-.projects-section {
+#projects-section {
     margin-top: 12.5rem;
-    padding-left: 10.67rem; /* Espacio izquierdo */
-    padding-right: 10.63rem; /* Espacio derecho */
+    padding-left: 10.67rem;
+    padding-right: 10.63rem;
 }
 
 .recent-projects {
@@ -189,9 +230,7 @@ button {
     padding-left: 1.85rem;
 }
 
-.simplify a,
-.dashcoin a,
-.vectorify a {
+.projects a {
     margin-top: 3.38rem;
     display: block;
     padding-left: 1.85rem;
@@ -216,27 +255,27 @@ button {
     color: var(--neutral-medium);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
-    .recent-projects {
+    #projects-section {
+        margin-top: 6rem;
         flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .projects {
+        margin-top: 3rem;
         flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
-        gap: 1.5rem; /* Reduce el espacio entre los proyectos */
-    }
-
-    .simplify,
-    .dashcoin,
-    .vectorify {
+        gap: 3rem;
         width: 100%; /* Asegura que los contenedores ocupen todo el ancho */
         min-height: auto; /* La altura se ajustará según el contenido */
     }
 
     .projects img {
-        max-height: 10rem; /* Reduce la altura de la imagen en pantallas más pequeñas */
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -256,7 +295,7 @@ button {
     background-color: var(--neutral-dark);
     /*background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;*/ 
+    background-repeat: no-repeat;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -299,14 +338,14 @@ button {
 }
 
 /* TITULO*/
-.testimonialh3 h3 {
+.testimonial-section h3 {
     background-color: var(--neutral-dark);
     color: var(--neutral-light);
     text-align: center;
 }
 
 /* TEXTO*/
-.testimonialp p {
+.testimonial-section p {
     background-color: var(--neutral-dark);
     color: var(--secondary-1);
     font: var(--body-medium);
@@ -315,42 +354,119 @@ button {
 
 /*PROFILE*/
 .testimonialbooking {
-    display: flex; /* Usamos flexbox para organizar los elementos */
-    align-items: center; /* Alineamos verticalmente en el centro */
-    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     background-color: var(--neutral-dark);
 }
 
 .testimonialbooking img {
-    width: 3.13rem; /* Ajusta el tamaño de la imagen según lo necesario */
-    height: 3.13rem; /* Mantenemos la imagen cuadrada */
-    border-radius: 50%; /* Hace la imagen circular */
-    object-fit: cover; /* Asegura que la imagen cubra su contenedor sin distorsionarse */
+    width: 3.13rem;
+    height: 3.13rem;
+    border-radius: 50%;
+    object-fit: cover;/* Asegura que la imagen cubra su contenedor sin distorsionarse */
 }
 
 .testimonial-text {
-    display: flex; /* Usamos flexbox para organizar el contenido en columna */
-    flex-direction: column; /* Apilamos los textos en una columna */
-    align-items: flex-start; /* Alineamos el texto a la izquierda */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: var(--neutral-dark);
 }
 
 .testimonial-text p {
-    margin: 0; /* Quitamos márgenes adicionales */
-    font-size: 1rem; /* Tamaño de texto */
-    margin-bottom: 0.5rem; /* Espacio entre el nombre y el enlace */
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     background-color: var(--neutral-dark);
     color: var(--primary-hover);
     font: var(--headline-regular);
 }
 
 .testimonial-text a {
-    font-size: 1rem; /* Tamaño de texto */
-    color: var(--neutral-light); /* Color para el enlace */
-    text-decoration: none; /* Sin subrayado en el enlace */
+    font-size: 1rem;
+    color: var(--neutral-light);
+    text-decoration: none;
     background-color: var(--neutral-dark);
     font: var(--caption-2);
 
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial-section {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 8rem; /* Reducimos el margen superior */
+        margin-bottom: 8rem; /* Reducimos el margen inferior */
+        background-color: white;
+        height: auto;
+        padding: 1rem;
+    }
+
+    /* EMOJIS */
+    .testimonial-memojis img {
+        width: 4.5rem; /* Reducimos el tamaño de los emojis */
+        height: 4.5rem;
+    }
+
+    .memojis1, .memojis2, .memojis3, .memojis4 {
+        margin: 1rem; /* Reducimos el margen de los emojis */
+    }
+
+    /* TITULO */
+    .testimonial-section h3 {
+        font-size: 2rem; /* Reducimos el tamaño del título */
+        margin-bottom: 1.5rem; /* Espacio debajo del título */
+        background-color: white;
+        color: var(--neutral-dark);
+
+    }
+
+    /* TEXTO */
+    .testimonial-section p {
+        font-size: 1rem; /* Reducimos el tamaño de los párrafos */
+        margin-bottom: 1rem;
+        background-color: white;
+        color: var(--neutral-dark);
+     
+    }
+
+    /* PROFILE */
+    .testimonialbooking {
+        flex-direction: column; /* Cambiamos la dirección de los elementos a columna */
+        align-items: center; /* Centramos los elementos */
+        gap: 1rem;
+        background-color: white;
+    
+    }
+
+    .testimonialbooking img {
+        width: 4rem; /* Reducimos el tamaño de la imagen del perfil */
+        height: 4rem;
+    }
+
+    .testimonial-text {
+        align-items: center; /* Centramos el texto del perfil */
+        text-align: center;
+        background-color: white;
+    
+    }
+
+    .testimonial-text p {
+        font-size: 0.9rem; /* Reducimos el tamaño de la fuente */
+        background-color: white;
+    }
+
+    .testimonial-text a {
+        font-size: 0.9rem; /* Reducimos el tamaño del enlace */
+        background-color: white;
+        color: var(--neutral-medium);
+    }
+
+
+    .memojis3, .memojis4{
+        display: none;
+    }
 }
 
 
@@ -360,10 +476,12 @@ button {
 
 */
 
-.services {
+#services {
     margin-top: 12.5rem;
-    padding-left: 10.67rem; /* Espacio izquierdo */
-    padding-right: 10.63rem; /* Espacio derecho */
+    padding-left: 10.67rem;
+    /* Espacio izquierdo */
+    padding-right: 10.63rem;
+    /* Espacio derecho */
 }
 
 .ourservices {
@@ -377,14 +495,14 @@ button {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    word-wrap: break-word;
     gap: 2.5rem;
 }
 
 .interface,
 .experience,
 .application {
-    background-color: #fff; /* Fondo blanco solo para los divs */
+    background-color: #fff;
+    /* Fondo blanco solo para los divs */
     min-height: auto;
     min-width: auto;
     flex-wrap: wrap;
@@ -401,10 +519,12 @@ button {
 .interface p,
 .experience p,
 .application p {
-    background-color: #fff; /* Fondo blanco solo para los divs */
-    word-wrap: break-word;
-    border-radius: 5px; /* Opcional: redondear los bordes */
-    padding: 1.85rem; 
+    background-color: #fff;
+    /* Fondo blanco solo para los divs */
+
+    border-radius: 5px;
+    /* Opcional: redondear los bordes */
+    padding: 1.85rem;
 }
 
 .interface a,
@@ -434,28 +554,45 @@ button {
     color: var(--neutral-medium);
 }
 
-@media screen and (max-width: 768px) { /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
-    .ourservices {
-        flex-direction: column;
+@media screen and (max-width: 900px) {
+    /* Ajustamos la sección de servicios para pantallas más pequeñas */
+    #services {
+        margin-top: 6rem;
+        padding-left: 2rem; /* Reducimos el espacio izquierdo */
+        padding-right: 2rem; /* Reducimos el espacio derecho */
     }
 
     .user {
-        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
-        gap: 1.5rem; /* Reduce el espacio entre los proyectos */
+        flex-direction: column; /* Cambiamos la dirección a columna para que los elementos se apilen */
+        gap: 2rem; /* Reducimos el espacio entre los elementos */
+        width: 100%; /* Hacemos que .user tenga un ancho del 100% */
+        align-items: center; /* Centramos los elementos */
     }
 
     .interface,
     .experience,
     .application {
-        width: 100%; /* Asegura que los contenedores ocupen todo el ancho */
-        min-height: auto; /* La altura se ajustará según el contenido */
+        width: 100%; /* Hacemos que cada div ocupe el 100% del ancho disponible */
+        min-height: auto;
+        padding: 2rem; /* Agregamos algo de padding para el contenido */
     }
 
-    .user img {
-        max-height: 10rem;
-        /* Reduce la altura de la imagen en pantallas más pequeñas */
+    .interface p,
+    .experience p,
+    .application p {
+        padding: 1rem; /* Ajustamos el padding */
+    }
+
+    .interface a,
+    .experience a,
+    .application a {
+        margin-top: 2rem; /* Reducimos el margen superior de los enlaces */
+        padding-left: 1.5rem; /* Reducimos el padding izquierdo */
     }
 }
+
+
+
 
 
 /* 
@@ -475,7 +612,7 @@ button {
     justify-content: space-around;
     align-items: center;
     padding: 6.88rem 8.5rem 6.88rem 8.5rem;
-    
+
 
 }
 
@@ -494,31 +631,68 @@ button {
     text-align: center;
 }
 
-.cta-section form{
+.cta-section form {
     display: flex;
-background-color: var(--secondary-1);
+    background-color: var(--secondary-1);
 
 }
 
 
-.cta-section input{
+.cta-section input {
     display: flex;
     flex-direction: row;
     border: none;
     color: var(--neutral-dark);
     font: var(--headline-regular)
-
 }
 
-.cta-section img{
+.cta-section img {
     padding-left: 1.25rem;
     padding-right: 0.63rem;
 }
 
-.cta-section button{
+.cta-section button {
     margin-left: 1.25rem;
 }
 
+@media screen and (max-width: 900px) {
+    .cta-section {
+        margin-top: 6rem;
+        margin-left: 1rem; /* Reducimos los márgenes laterales */
+        margin-right: 1rem;
+        padding: 4rem 2rem; /* Reducimos el padding */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centramos el contenido verticalmente */
+        align-items: center; /* Centramos el contenido horizontalmente */
+        gap: 2rem;
+    }
 
+    .cta-section form {
+        flex-direction: column; /* Cambiamos la dirección a columna para pantallas pequeñas */
+        width: 100%; /* Hacemos que el formulario ocupe el 100% del ancho */
+        gap: 1.5rem; /* Agregamos un pequeño espacio entre los elementos */
+        display: flex;
+        align-items: center; /* Centramos los elementos dentro del formulario */
+    }
 
+    .cta-section img {
+        display: none; /* Ocultamos la imagen en pantallas pequeñas */
+    }
 
+    .cta-section input {
+        width: 100%; /* Aseguramos que el input ocupe todo el ancho disponible */
+        padding: 1rem; /* Aumentamos el padding para mejor interacción */
+        text-align: center; /* Centramos el texto dentro del input */
+    }
+
+    .cta-section button {
+        width: 100%; /* Hacemos que el botón también ocupe el 100% */
+        padding: 1rem; /* Ajustamos el padding */
+        display: flex;
+        justify-content: center; /* Centra el texto dentro del botón */
+        align-items: center; /* Centra el texto dentro del botón */
+    }
+
+    
+}
