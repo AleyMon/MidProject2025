@@ -1,13 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!--La jerarquía de los archivos CSS se determina por el orden en que los enlazas en tu archivo HTML-->
     <link rel="stylesheet" href="./projectDetail.css">
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Project Detail!</h1>
+    <header>
+        <nav class="navegador">
+            <img class="logo" src="/img-midproject/project-assets/logos/circle.svg" alt="Logo" />
+            <ul class="enlaces">
+                <li><a href="" class="enlaces-home">Home</a></li> <!--INCLUIR LINKS-->
+                <li><a href="#projects-section" class="enlaces-projects">Projects</a></li>
+                <li><a href="#services" class="enlaces-services">Services</a></li>
+            </ul>
+            <button onclick="window.location.href='contact.html'">Contact Us</button><!-- VINCULAR A PAG CONTACT-->
+        </nav>
+    </header>
+
+    <section id="simplify">
+            <div class="">
+                <h1>Simplify</h1>
+            </div>
+            <div class="simplifyp">
+                <p class="simplifyp1">UI Design & App Development</p>
+                <p class="simplifyp2">Completed on <span>June 22, 2021</span></p>
+            </div>
+        </div>
+
+        <div class="simplify-img">
+            <img src="/img-midproject/project-assets/projects-section/1.jpg" alt="">
+        </div>
+        <p class="simplify-text">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit
+            dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute
+            id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt
+            ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix
+            duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+            Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+            <br>
+            <br>
+            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit
+            dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute
+            id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor
+            enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis
+            id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+            tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure
+            ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+            sint deserunt ut voluptate aute id deserunt nis cillum minim tempor enim.
+        </p>
+
+    </section>
+
+    <section id="otherprojects">
+
+        <div class="other-projects">
+            <h3>Other Projects</h3><br>
+        </div>
+
+        <div class="projects">
+
+            <div class="orbit">
+                <img src="/img-midproject/project-assets/projects-section/4.jpg" alt="simplify">
+                <p class="projects-medium">Orbit</p>
+                <p class="projects-regular">UI Design</p>
+                <a href="">Learn more</a>
+            </div>
+
+            <div class="purify">
+                <img src="/img-midproject/project-assets/projects-section/5.jpg" alt="dashcoin">
+                <p class="projects-medium">Purify</p>
+                <p class="projects-regular">UI/UX Design</p>
+                <a href="">Learn more</a>
+            </div>
+
+            <div class="cryptopie">
+                <img src="/img-midproject/project-assets/projects-section/6.jpg" alt="vectorify">
+                <p class="projects-medium">CryptoPie</p>
+                <p class="projects-regular">App Development</p>
+                <a href="">Learn more</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <h3>Do you have any questions?</h3>
+        <p>Let us help you!</p>
+
+        <form action="" method="POST">
+            <img src="/img-midproject/project-assets/newsletter/icon/mail.svg" alt="Email Icon" class="email-icon">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscríbe</button>
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo-footer">
+            <img class="logo" src="/img-midproject/project-assets/logos/circle.svg" alt="Logo" />
+            <p>2972 Westheimer Rd. Santa Ana,</p>
+            <p>Illinois 85486</p>
+        </div>
+        <ul class="">
+            <li><a href="" class="">Team</a></li> <!--INCLUIR LINKS-->
+            <li><a href="" class="">Press</a></li>
+        </ul>
+        <ul class="">
+            <li><a href="#services" class="">Services</a></li>
+            <li><a href="#projects-section" class="">Projects</a></li> <!--INCLUIR LINKS-->
+        </ul>
+        <ul class="">
+            <li><a href="" class="">About Us</a></li>
+            <li><a href="" class="">Privacy Policy</a></li> <!--INCLUIR LINKS-->
+        </ul>
+
+
+    </footer>
 </body>
+
 </html>

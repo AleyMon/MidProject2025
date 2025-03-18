@@ -1,0 +1,314 @@
+/* 
+
+-----------SIMPLIFY -------
+
+*/
+#simplify {
+    margin-top: 10.75rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10.67rem;
+    padding-right: 10.63rem;
+}
+
+.simplifyp {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simplify-img {
+    height: 27.75rem;
+    display: flex;
+    margin-top: 5rem;
+
+}
+
+.simplify-img img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.simplifyp1 {
+    color: var(--neutral-medium);
+    font: var(--body-medium);
+}
+
+.simplifyp2 {
+    color: var(--neutral-dark);
+    font: var(--body-regular);
+}
+
+span {
+    color: var(--neutral-medium);
+    font: var(--body-regular);
+}
+
+.simplify-text {
+    margin-top: 4.38rem;
+    color: var(--neutral-medium);
+    font: var(--body-regular);
+    padding-bottom: 2.69rem;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    #simplify {
+        margin-top: 10.75rem;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .simplifyp {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .simplify-img {
+        margin-top: 5rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .simplify-text {
+        margin-top: 4.38rem;
+        color: var(--neutral-medium);
+        font: var(--body-regular);
+        padding-bottom: 2rem;
+    }
+}
+
+/* 
+
+-----------OTHER PROJECTS -------
+
+*/
+
+#otherprojects {
+    margin-top: 4.38rem;
+    padding-left: 10.67rem;
+    padding-right: 10.63rem;
+}
+
+.other-projects {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projects {
+    margin-top: 4.38rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    word-wrap: break-word;
+    gap: 2.5rem;
+}
+
+.orbit,
+.purify,
+.cryptopie {
+    background-color: #fff;
+    /* Fondo blanco solo para los divs */
+    min-height: auto;
+    min-width: auto;
+    flex-wrap: wrap;
+}
+
+.projects img {
+    height: 15rem;
+    width: 27.75rem;
+    object-fit: cover;
+}
+
+.orbit h2,
+.purify h2,
+.cryptopie h2,
+.orbit p,
+.purify p,
+.cryptopie p {
+    background-color: #fff;
+    /* Fondo blanco solo para los divs */
+    word-wrap: break-word;
+    border-radius: 5px;
+    /* Opcional: redondear los bordes */
+    padding-top: 1.85rem;
+    padding-left: 1.85rem;
+}
+
+.projects a {
+    margin-top: 3.38rem;
+    display: block;
+    padding-left: 1.85rem;
+    background-color: white;
+    color: var(--primary-default);
+    text-decoration: none;
+    font: var(--headline-regular);
+}
+
+.projects a {
+    align-items: flex-end;
+    padding-bottom: 1.88rem;
+}
+
+.projects-medium {
+    font: var(--body-medium);
+    color: var(--neutral-dark);
+}
+
+.projects-regular {
+    font: var(--headline-regular);
+    color: var(--neutral-medium);
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
+    #otherprojects {
+        margin-top: 6rem;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .projects {
+        margin-top: 3rem;
+        flex-direction: column;
+        /* Cambia a columna para pantallas más pequeñas */
+        gap: 3rem;
+        width: 100%;
+        /* Asegura que los contenedores ocupen todo el ancho */
+        min-height: auto;
+        /* La altura se ajustará según el contenido */
+    }
+
+    .projects img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.cta-section {
+    margin-top: 12.5rem;
+    min-height: 50vh;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    background-color: var(--secondary-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6.88rem 8.5rem 6.88rem 8.5rem;
+
+
+}
+
+/* TITULO*/
+.cta-section h3 {
+    background-color: var(--secondary-1);
+    color: var(--neutral-dark);
+    text-align: center;
+}
+
+/* TEXTO*/
+.cta-section p {
+    background-color: var(--secondary-1);
+    color: var(--neutral-dark);
+    font: var(--body-regular);
+    text-align: center;
+}
+
+.cta-section form {
+    display: flex;
+    background-color: var(--secondary-1);
+
+}
+
+
+.cta-section input {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: var(--neutral-dark);
+    font: var(--headline-regular)
+}
+
+.cta-section img {
+    padding-left: 1.25rem;
+    padding-right: 0.63rem;
+}
+
+.cta-section button {
+    margin-left: 1.25rem;
+}
+
+@media screen and (max-width: 900px) {
+    .cta-section {
+        margin-top: 6rem;
+        margin-left: 1rem;
+        /* Reducimos los márgenes laterales */
+        margin-right: 1rem;
+        padding: 4rem 2rem;
+        /* Reducimos el padding */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centramos el contenido verticalmente */
+        align-items: center;
+        /* Centramos el contenido horizontalmente */
+        gap: 2rem;
+    }
+
+    .cta-section form {
+        flex-direction: column;
+        /* Cambiamos la dirección a columna para pantallas pequeñas */
+        width: 100%;
+        /* Hacemos que el formulario ocupe el 100% del ancho */
+        gap: 1.5rem;
+        /* Agregamos un pequeño espacio entre los elementos */
+        display: flex;
+        align-items: center;
+        /* Centramos los elementos dentro del formulario */
+    }
+
+    .cta-section img {
+        display: none;
+        /* Ocultamos la imagen en pantallas pequeñas */
+    }
+
+    .cta-section input {
+        width: 100%;
+        /* Aseguramos que el input ocupe todo el ancho disponible */
+        padding: 1rem;
+        /* Aumentamos el padding para mejor interacción */
+        text-align: center;
+        /* Centramos el texto dentro del input */
+    }
+
+    .cta-section button {
+        width: 100%;
+        /* Hacemos que el botón también ocupe el 100% */
+        padding: 1rem;
+        /* Ajustamos el padding */
+        display: flex;
+        justify-content: center;
+        /* Centra el texto dentro del botón */
+        align-items: center;
+        /* Centra el texto dentro del botón */
+    }
+
+
+}

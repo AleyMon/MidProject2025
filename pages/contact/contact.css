@@ -1,0 +1,40 @@
+#contact {
+    margin-top: 10.75rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10.67rem;
+    padding-right: 10.63rem;
+   
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email, .phone{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-button{
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea, button {
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno */
+    padding: 8px;
+}
+
+.input{
+    height: 4.38rem;
+    background-color: var(--neutral-medium);
+}
