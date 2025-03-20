@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <!--La jerarquía de los archivos CSS se determina por el orden en que los enlazas en tu archivo HTML-->
     <link rel="stylesheet" href="./contact.css">
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Contact Page!</h1>
+    <header>
+        <nav class="navegador">
+            <img class="logo" src="/img-midproject/project-assets/logos/circle.svg" alt="Logo" />
+            <ul class="enlaces">
+                <li><a href="/index.html" class="enlaces-home">Home</a></li> <!--INCLUIR LINKS-->
+                <li><a href="/index.html#projects-section" class="enlaces-projects">Projects</a></li>
+                <li><a href="/index.html#services" class="enlaces-services">Services</a></li>
+            </ul>
+            <button onclick="window.location.href='contact.html'">Contact Us</button><!-- VINCULAR A PAG CONTACT-->
+        </nav>
+    </header>
+
+    <section id="contact">
+        <div class="">
+            <h1>Contact Us</h1>
+        </div>
+
+        <form action="/submit" method="POST">
+            <fieldset>
+                <div class="name">
+                <label for="nombre">Full Name*</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Enter your full name" required>
+            </div>
+
+                <div class="email-phone">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email adress" required>
+                    </div>
+
+                    <div class="phone">
+                        <label for="phone">Phone</label>
+                        <input type="phone" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                </div>
+
+                <div class="mensaje">
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Write your message here..."
+                    required></textarea>
+                </div>
+                <div class="contact-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+
+
+
+
+    <footer>
+
+        <div class="logo-footer">
+            <img class="logo" src="/img-midproject/project-assets/logos/circle.svg" alt="Logo" />
+            <p>2972 Westheimer Rd. Santa Ana,</p>
+            <p>Illinois 85486</p>
+        </div>
+        <ul class="">
+            <li><a href="" class="">Team</a></li> <!--INCLUIR LINKS-->
+            <li><a href="" class="">Press</a></li>
+        </ul>
+        <ul class="">
+            <li><a href="#services" class="">Services</a></li>
+            <li><a href="#projects-section" class="">Projects</a></li> <!--INCLUIR LINKS-->
+        </ul>
+        <ul class="">
+            <li><a href="" class="">About Us</a></li>
+            <li><a href="" class="">Privacy Policy</a></li> <!--INCLUIR LINKS-->
+        </ul>
+
+
+    </footer>
 </body>
+
 </html>
