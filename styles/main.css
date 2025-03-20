@@ -1,2 +1,199 @@
-@import url('styles/_colors.css');
-@import url('styles/_fonts.css');
+@import url('./_colors.css');
+@import url('./_fonts.css');
+
+
+/* Reglas Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Para quitar la barra horizontal */
+    background-color: var(--neutral-light);
+}
+
+
+/* Título */
+h1 {
+    font: var(--h1);
+}
+
+h2{
+    font: var(--h2);
+}
+h3 {
+font: var(--h3);
+}
+
+h4{
+    font: var(--h4);
+}
+
+
+
+/* Encabezado Fijo */
+header {
+    width: 100vw;
+    height: 15.25vh;
+    position: fixed; /* Mantener el navbar fijo en la parte superior */
+    top: 0; /* Asegura que quede en la parte superior */
+    left: 0; /* Asegura que se alinee con el borde izquierdo */
+    z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+    background-color: var(--neutral-light); /* Asegura que el fondo no se "pierda" al hacer scroll */
+    
+}
+
+/* Navegación dentro del header */
+.navegador {
+    padding-top: 4.38rem; /* Distancia entre el contenido del nav y el borde superior */
+    padding-left: 10.67rem; /* Espacio izquierdo */
+    padding-right: 10.63rem; /* Espacio derecho */
+    display: flex; /* Organiza los elementos en una fila */
+    justify-content: space-between; /* Espacio entre los elementos de la lista */
+    align-items: center; /* Alineación vertical de los elementos */
+    position: relative; /* Mantener el flujo normal del documento dentro del header */
+    gap: 3.75rem;
+    font: var(--headline-medium);
+}
+
+.enlaces {
+list-style: none; /*para quitar puntos de ul del navegador*/
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+flex-grow: 1;
+}
+
+.enlaces li {
+display: inline;
+}
+
+button {
+text-decoration: none;
+color: #FFFFFF;
+background-color: var(--primary-default);
+border: none;
+width: 9.38rem;
+height: 3.25rem;
+font: var(--headline-medium);
+}
+
+.navegador img {
+align-self: center;
+width: 3.78rem;
+height: 1.16rem;
+}
+
+.enlaces-home {
+    color: var(--primary-default);
+    text-decoration: none;
+}
+
+.enlaces-projects, .enlaces-services {
+text-decoration: none; /*para quitar la linea de los links*/
+color: var(--neutral-medium);
+} 
+
+@media screen and (max-width: 900px) {
+
+    .header{
+        margin-top: 4rem;
+        height: auto;
+    }
+    .navegador{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        margin-top: auto;
+        gap: 1rem;
+        padding:1rem;
+        height: auto;
+       
+    }
+    
+    .enlaces{
+        display: none;
+    }
+    .navegador button{
+        font-size: 1.2rem;/* Aumentar tamaño del texto */
+        text-align: center;
+    }
+
+.logo{
+    margin-bottom: auto;
+}
+    }
+ 
+
+
+/* ---- FOOTER -----*/
+
+footer{
+    min-height: 26.89vh;
+    padding: 12.5rem 10.63rem 6.25rem 10.63rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 6.15rem;
+    height: 1.88rem;
+    margin-bottom: 1.88rem;
+}
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.75rem; 
+
+}
+
+footer p, a{
+    color: var(--neutral-medium);
+    text-decoration: none;
+    font: var(--headline-regular)
+}
+
+@media screen and (max-width: 900px) {
+
+    footer{
+        margin-top: 3rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    
+    footer ul {
+        row-gap: 0;  /* Disminuir el espacio entre los elementos de la lista */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    footer p, a{
+        font-size: 0.9rem;
+    }
+
+ 
+    .logo-footer{
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+
+    }
+ 
+
+
