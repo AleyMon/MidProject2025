@@ -16,7 +16,7 @@
    
 }
 
-fieldset{
+form{
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -49,8 +49,8 @@ fieldset{
 }
 
 input, textarea, button {
-    border: none; /* Elimina el borde */
-    outline: none; /* Elimina el contorno */
+    border: none; 
+    outline: none; 
 }
 
 input, textarea {
@@ -84,6 +84,8 @@ textarea{
 label{
     font: var(--headline-regular);
 }
+
+
 
 @media screen and (max-width: 900px){
     #contact {
@@ -132,3 +134,4 @@ label{
     
 
 }
+
