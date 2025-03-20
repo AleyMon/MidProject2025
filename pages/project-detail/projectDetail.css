@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Para quitar la barra horizontal */
+    overflow-x: hidden;
+    /* Para quitar la barra horizontal */
     background-color: var(--neutral-light);
 }
 
@@ -30,8 +31,12 @@
 
 .simplify-img {
     height: 27.75rem;
-    display: flex;
+    max-width: 100%;
+    /* No permitir que las imágenes se amplíen más allá de su contenedor */
     margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    /* Centra la imagen */
 
 }
 
@@ -184,7 +189,7 @@ span {
 
 @media screen and (max-width: 900px) {
 
-    /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
+
     #otherprojects {
         margin-top: 6rem;
         flex-direction: column;
@@ -268,55 +273,42 @@ span {
     .cta-section {
         margin-top: 6rem;
         margin-left: 1rem;
-        /* Reducimos los márgenes laterales */
+        /* Reducir los márgenes laterales */
         margin-right: 1rem;
         padding: 4rem 2rem;
-        /* Reducimos el padding */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Centramos el contenido verticalmente */
         align-items: center;
-        /* Centramos el contenido horizontalmente */
         gap: 2rem;
     }
 
     .cta-section form {
         flex-direction: column;
-        /* Cambiamos la dirección a columna para pantallas pequeñas */
         width: 100%;
-        /* Hacemos que el formulario ocupe el 100% del ancho */
         gap: 1.5rem;
-        /* Agregamos un pequeño espacio entre los elementos */
         display: flex;
         align-items: center;
-        /* Centramos los elementos dentro del formulario */
     }
 
     .cta-section img {
         display: none;
-        /* Ocultamos la imagen en pantallas pequeñas */
     }
 
     .cta-section input {
         width: 100%;
-        /* Aseguramos que el input ocupe todo el ancho disponible */
         padding: 1rem;
-        /* Aumentamos el padding para mejor interacción */
         text-align: center;
-        /* Centramos el texto dentro del input */
+
     }
 
     .cta-section button {
         width: 100%;
-        /* Hacemos que el botón también ocupe el 100% */
         padding: 1rem;
-        /* Ajustamos el padding */
         display: flex;
         justify-content: center;
-        /* Centra el texto dentro del botón */
         align-items: center;
-        /* Centra el texto dentro del botón */
+
     }
 
 
