@@ -144,11 +144,18 @@
     filter: grayscale(1);
     align-items: center;
     gap: 5.56rem;
+    background-color: var(--neutral-light);
+    height: auto;
 }
 
 .clients img {
     width: 6.5rem;
     height: 2rem;
+    background-color: var(--neutral-light);
+}
+
+.clients airnb{
+    background-color: var(--neutral-light);
 }
 
 /* Ajustes para pantallas pequeñas */
@@ -182,7 +189,7 @@
 */
 
 #projects-section {
-    padding-top: 15vh;
+    padding-top: 15vh; /* con padding en vh al lincar id en otra pagina, visualizar el recent project. Con margin no deja fuera. pero asi afecta responsive, no lo esta cogiendo bien*/
     padding-left: 10.67rem;
     padding-right: 10.63rem;
 }
@@ -259,7 +266,7 @@
 
     /* Esta es una medida comúnmente utilizada para dispositivos como tabletas o pantallas medianas*/
     #projects-section {
-        margin-top: 6rem;
+        margin-top: 0rem;
         flex-direction: column;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -397,7 +404,7 @@
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         margin-top: 8rem; /* Reducimos el margen superior */
-        margin-bottom: 8rem; /* Reducimos el margen inferior */
+        margin-bottom: 0rem; /* Reducimos el margen inferior */
         background-color: white;
         height: auto;
         padding: 1rem;
@@ -556,7 +563,7 @@
 @media screen and (max-width: 900px) {
     /* Ajustamos la sección de servicios para pantallas más pequeñas */
     #services {
-        margin-top: 6rem;
+        padding-top: 12.5rem;
         padding-left: 2rem; /* Reducimos el espacio izquierdo */
         padding-right: 2rem; /* Reducimos el espacio derecho */
     }
