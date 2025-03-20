@@ -182,7 +182,7 @@
 */
 
 #projects-section {
-    margin-top: 12.5rem;
+    padding-top: 15vh;
     padding-left: 10.67rem;
     padding-right: 10.63rem;
 }
@@ -291,7 +291,7 @@
     min-height: 69.25vh;
     margin-left: 3.75rem;
     margin-right: 3.75rem;
-    margin-bottom: 12.5rem;
+    
     background-color: var(--neutral-dark);
     /*background-size: cover;
     background-position: center;
@@ -477,11 +477,10 @@
 */
 
 #services {
-    margin-top: 12.5rem;
+    padding-top: 15vh;
     padding-left: 10.67rem;
-    /* Espacio izquierdo */
     padding-right: 10.63rem;
-    /* Espacio derecho */
+  
 }
 
 .ourservices {
