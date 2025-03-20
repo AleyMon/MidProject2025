@@ -95,9 +95,10 @@ text-decoration: none; /*para quitar la linea de los links*/
 color: var(--neutral-medium);
 } 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     .header{
+        margin-top: 4rem;
         height: auto;
     }
     .navegador{
@@ -161,10 +162,10 @@ footer p, a{
     font: var(--headline-regular)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     footer{
-        margin-top: 6rem;
+        margin-top: 3rem;
         height: auto;
         display: flex;
         flex-direction: column;
