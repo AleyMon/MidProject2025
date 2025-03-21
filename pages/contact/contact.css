@@ -89,25 +89,18 @@ label{
 
 @media screen and (max-width: 900px){
     #contact {
-        margin-top: 10.75rem;
+        margin-top: 15rem;
         display: flex;
         flex-direction: column;
         padding-left: 2rem;
         padding-right: 2rem;
-       
-    }
-
-    fieldset{
-        margin-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: none;
-        row-gap: 2.5rem;
-        width: 100%;
-
-    }
     
+    }
+
+    
+    form{
+        margin-top: 3rem;
+    }
     .email-phone{
         display: flex;
         flex-direction: column;
@@ -115,9 +108,7 @@ label{
     
     
     .contact-button{
-
         width: 100%;
-       
     }
 
     
@@ -130,6 +121,10 @@ label{
         display: flex;
         justify-content: center;
         padding: 1rem;
+    }
+
+    h1{
+        font: var(--h2);
     }
     
 
