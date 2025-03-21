@@ -100,6 +100,7 @@ color: var(--neutral-medium);
     .header{
         margin-top: 4rem;
         height: auto;
+
     }
     .navegador{
         display: flex;
@@ -108,8 +109,8 @@ color: var(--neutral-medium);
         align-items: center;
         align-content: space-around;
         margin-top: auto;
-        gap: 1rem;
-        padding:1rem;
+        gap: 1.5rem;
+    padding-top: 2rem;
         height: auto;
        
     }
@@ -144,10 +145,14 @@ footer img{
     height: 1.88rem;
     margin-bottom: 1.88rem;
 }
+
 .logo-footer{
     display: flex;
     flex-direction: column;
+    
 }
+
+
 
 footer ul {
     display: flex;
@@ -192,8 +197,7 @@ footer p, a{
         padding-bottom: 2rem;
         align-items: center;
     }
-
-    }
+}
  
 
 
