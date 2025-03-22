@@ -41,12 +41,13 @@ h4{
 /* Encabezado Fijo.
 IMPORTANTE: NO PONER HEIGHT A HEADER */
 header {
-    width: 100vw;
     position: fixed; /* Mantener el navbar fijo en la parte superior */
     top: 0; /* Asegura que quede en la parte superior (relacionado con position*/
     left: 0; /* Asegura que se alinee con el borde izquierdo */
     z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
     background-color: var(--neutral-light); /* Asegura que el fondo no se "pierda" al hacer scroll */
+    align-items: center; /* Alineación vertical de los elementos */
+    position: relative; /* Mantener el flujo normal del documento dentro del header */
     
 }
 
@@ -56,9 +57,8 @@ header {
     margin-left: 10.67rem; /* Espacio izquierdo */
     margin-right: 10.63rem; /* Espacio derecho */
     display: flex; /* Organiza los elementos en una fila */
-    justify-content: space-between; /* Espacio entre los elementos de la lista */
+
     align-items: center; /* Alineación vertical de los elementos */
-    position: relative; /* Mantener el flujo normal del documento dentro del header */
     gap: 3.75rem;
     font: var(--headline-medium);
 }
