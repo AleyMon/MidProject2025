@@ -38,7 +38,8 @@ h4{
 
 
 
-/* Encabezado Fijo */
+/* Encabezado Fijo.
+IMPORTANTE: NO PONER HEIGHT A HEADER */
 header {
     width: 100vw;
     position: fixed; /* Mantener el navbar fijo en la parte superior */
