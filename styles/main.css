@@ -41,7 +41,6 @@ h4{
 /* Encabezado Fijo */
 header {
     width: 100vw;
-    height: 15.25vh;
     position: fixed; /* Mantener el navbar fijo en la parte superior */
     top: 0; /* Asegura que quede en la parte superior (relacionado con position*/
     left: 0; /* Asegura que se alinee con el borde izquierdo */
@@ -108,7 +107,8 @@ color: var(--neutral-medium);
 
     .header{
         margin-top: 4rem;
-        height: auto;
+        height:0;
+        width: 100%;
 
     }
     .navegador{
@@ -116,24 +116,31 @@ color: var(--neutral-medium);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        align-content: space-around;
+        align-content: center;
         margin-top: auto;
         gap: 1.5rem;
     padding-top: 2rem;
         height: auto;
        
+        margin-left: auto;
+        margin-right: auto;
+        
+       
     }
     
+
     .enlaces{
         display: none;
     }
     .navegador button{
         font-size: 1.2rem;/* Aumentar tamaño del texto */
         text-align: center;
+        
     }
 
 .logo{
     margin-bottom: auto;
+    width: auto;
 }
     }
  
