@@ -1,6 +1,5 @@
 .hero-section {
     margin-top: 10rem;
-    width: 100vw;
     height: auto;
     padding-left: 10.67rem;
     padding-right: 10.63rem;
@@ -8,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    
 }
 
 
