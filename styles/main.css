@@ -12,6 +12,14 @@
 }
 
 
+/* IMPORTANTE: Para manetener estatico el cuerpo de pagina*/
+body{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100%;
+}
+
 /* Título */
 h1 {
     font: var(--h1);
@@ -35,7 +43,7 @@ header {
     width: 100vw;
     height: 15.25vh;
     position: fixed; /* Mantener el navbar fijo en la parte superior */
-    top: 0; /* Asegura que quede en la parte superior */
+    top: 0; /* Asegura que quede en la parte superior (relacionado con position*/
     left: 0; /* Asegura que se alinee con el borde izquierdo */
     z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
     background-color: var(--neutral-light); /* Asegura que el fondo no se "pierda" al hacer scroll */
@@ -45,8 +53,8 @@ header {
 /* Navegación dentro del header */
 .navegador {
     padding-top: 4.38rem; /* Distancia entre el contenido del nav y el borde superior */
-    padding-left: 10.67rem; /* Espacio izquierdo */
-    padding-right: 10.63rem; /* Espacio derecho */
+    margin-left: 10.67rem; /* Espacio izquierdo */
+    margin-right: 10.63rem; /* Espacio derecho */
     display: flex; /* Organiza los elementos en una fila */
     justify-content: space-between; /* Espacio entre los elementos de la lista */
     align-items: center; /* Alineación vertical de los elementos */
@@ -54,6 +62,7 @@ header {
     gap: 3.75rem;
     font: var(--headline-medium);
 }
+
 
 .enlaces {
 list-style: none; /*para quitar puntos de ul del navegador*/
